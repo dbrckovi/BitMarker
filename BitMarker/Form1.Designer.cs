@@ -28,12 +28,33 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.components = new System.ComponentModel.Container();
+      this.bitMarkerControl1 = new BitMarker.BitMarkerControl();
+      this.SuspendLayout();
+      // 
+      // bitMarkerControl1
+      // 
+      this.bitMarkerControl1.Bits = 11;
+      this.bitMarkerControl1.BoxSize = new System.Drawing.Size(16, 16);
+      this.bitMarkerControl1.Location = new System.Drawing.Point(53, 39);
+      this.bitMarkerControl1.Name = "bitMarkerControl1";
+      this.bitMarkerControl1.Size = new System.Drawing.Size(238, 104);
+      this.bitMarkerControl1.TabIndex = 0;
+      // 
+      // Form1
+      // 
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.ClientSize = new System.Drawing.Size(567, 262);
+      this.Controls.Add(this.bitMarkerControl1);
+      this.Name = "Form1";
       this.Text = "Form1";
+      this.ResumeLayout(false);
+
     }
 
     #endregion
+
+    private BitMarkerControl bitMarkerControl1;
   }
 }
 
