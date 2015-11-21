@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BitBox.Designer.cs">
+      <DependentUpon>BitBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="BitMarkerControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BitBox.resx">
+      <DependentUpon>BitBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BitMarkerControl.resx">
       <DependentUpon>BitMarkerControl.cs</DependentUpon>
     </EmbeddedResource>

@@ -15,5 +15,15 @@ namespace BitMarker
     {
       InitializeComponent();
     }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+      bitMarkerControl1.Bits++;
+    }
+
+    private void button2_Click(object sender, EventArgs e)
+    {
+      bitMarkerControl1.Bits--;
+    }
   }
 }

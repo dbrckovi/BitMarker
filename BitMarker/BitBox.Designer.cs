@@ -1,6 +1,6 @@
 ﻿namespace BitMarker
 {
-  partial class BitMarkerControl
+  partial class BitBox
   {
     /// <summary> 
     /// Required designer variable.
@@ -30,13 +30,16 @@
     {
       this.SuspendLayout();
       // 
-      // BitMarkerControl
+      // BitBox
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.DoubleBuffered = true;
-      this.Name = "BitMarkerControl";
-      this.Size = new System.Drawing.Size(562, 33);
+      this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+      this.Margin = new System.Windows.Forms.Padding(0);
+      this.Name = "BitBox";
+      this.Size = new System.Drawing.Size(8, 16);
+      this.MouseEnter += new System.EventHandler(this.BitBox_MouseEnter);
+      this.MouseLeave += new System.EventHandler(this.BitBox_MouseLeave);
       this.ResumeLayout(false);
 
     }
